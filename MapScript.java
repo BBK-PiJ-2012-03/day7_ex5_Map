@@ -5,7 +5,7 @@ public class MapScript {
 	}
  
 	public void launch() {
-		SingleMapImpl myMap  = new SingleMapImpl();
+		SingleMap myMap  = new SingleMapImpl();
 		myMap.isEmpty();
 		myMap.put(5, "Kostas");
 		myMap.put(10, "Kostas2");;
@@ -13,6 +13,8 @@ public class MapScript {
 		myMap.put(15, "Kostas4");
 		myMap.put(25, "Kostas5");
 		myMap.remove(14);
+		myMap.remove(5);
+		System.out.println(myMap.get(10));
 		myMap.isEmpty();
 		
 	}
